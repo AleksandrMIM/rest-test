@@ -29,8 +29,7 @@ public class CameraReactiveRestGateway implements CameraReactiveGateway {
 
   @Override
   public Flux<CameraModel> createCameraInfo() {
-    return reactiveRestClient
-        .get(restApiProperties.getUrl(), CameraInfo.class, cameraDtoMapper::map);
+    return reactiveRestClient.get(restApiProperties.getUrl(), CameraInfo.class, cameraDtoMapper::map);
   }
 
   @Override
