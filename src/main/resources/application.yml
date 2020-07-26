@@ -1,0 +1,20 @@
+server:
+  port: 8080
+  servlet:
+    encoding:
+      charset: UTF-8
+      enabled: true
+      force: true
+
+spring:
+  jackson:
+    default-property-inclusion: non_null
+    serialization:
+      write_dates_as_timestamps: false
+
+rest:
+  api:
+    connect-timeout: 1000
+    read-timeout: 5000
+    write-timeout: 5000
+    url: http://www.mocky.io/v2/5c51b9dd3400003252129fb5
